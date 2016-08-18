@@ -330,7 +330,7 @@ html {
 }
 .slide3 .tLine{
     position: absolute;
-    top: 0.7rem;
+    top: 1.4rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
@@ -374,8 +374,8 @@ html {
     }
     100%{
         opacity: 1;
-        -webkit-transform: translate(0, -10px) rotate(45deg);
-        transform: translate(0, -10px) rotate(45deg);
+        -webkit-transform: translate(0, -15px) rotate(45deg);
+        transform: translate(0, -15px) rotate(45deg);
     }
 }
 @keyframes lineMove1 {
@@ -392,8 +392,8 @@ html {
     }
     100%{
         opacity: 1;
-        -webkit-transform: translate(0, -10px) rotate(45deg);
-        transform: translate(0, -10px) rotate(45deg);
+        -webkit-transform: translate(0, -15px) rotate(45deg);
+        transform: translate(0, -15px) rotate(45deg);
     }
 }
 
@@ -1138,8 +1138,8 @@ html {
     }
     100%{
         opacity: 1;
-        -webkit-transform: translate(0, -10px) rotate(-45deg);
-        transform: translate(0, -10px) rotate(-45deg);
+        -webkit-transform: translate(0, -20px) rotate(-45deg);
+        transform: translate(0, -20px) rotate(-45deg);
     }
 }
 @keyframes lineMove {
@@ -1156,8 +1156,8 @@ html {
     }
     100%{
         opacity: 1;
-        -webkit-transform: translate(0, -10px) rotate(-45deg);
-        transform: translate(0, -10px) rotate(-45deg);
+        -webkit-transform: translate(0, -20px) rotate(-45deg);
+        transform: translate(0, -20px) rotate(-45deg);
     }
 }
 /*在某些设备上，由于屏幕的宽高比例和设计稿的比例严重失调，会出现我们响应式计算的结果不符合最佳预览方案，此时我们针对于特殊的设备用@MEDIA进行微调整即可*/
