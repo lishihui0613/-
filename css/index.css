@@ -599,17 +599,21 @@ html {
     width: 2.04rem;
     height: 1.94rem;
 }
+
 .slide4 span{
     display: inline-block;
     position: absolute;
     top: 1.2rem;
-    left: .6rem;
+    left: .5rem;
     width: 1.3rem;
     height: 1.1rem;
     font-size: .4rem;
     color: rgb(35, 163, 211);
 
 }
+.slide4 .skill{
+     font-size: .6rem;
+ }
 .slide4 div{
     position: absolute;
     top: .9rem;
