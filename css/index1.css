@@ -181,18 +181,18 @@ html {
     color: #fff;
     position: absolute;
     top: 3.5rem;
-    left: .8rem;
+    left: .4rem;
     opacity: 0;
 }
 .slide1 .promise{
-    top: 7rem;
+    top: 7.4rem;
 }
 .slide1 .confi{
-    top: 8rem;
+    top: 8.4rem;
 }
 .slide1 .promise,.slide1 .confi{
     width: 2.3rem;
-    font-size: .3rem;
+    font-size: .4rem;
     line-height: .4rem;
     display: block;
     color: rgb(255,255,255);
@@ -204,15 +204,15 @@ html {
 }
 .slide1 .line2{
     position: absolute;
-    left: 2.3rem;
+    left: 2.2rem;
     font-style: normal;
     display: block;
-    width: 2rem;
+    width: 2.3rem;
     height: 1rem;
     border: 1px solid #eee;
     border-left: transparent;
     border-right: transparent;
-    top: 7.7rem;
+    top: 8.2rem;
     z-index: 11;
     opacity: 0;
 }
@@ -221,7 +221,7 @@ html {
     color: #928d88;
     position: absolute;
     left: 2.1rem;
-    top: 9rem;
+    top: 9.4rem;
     opacity: 0;
 }
 
@@ -275,7 +275,7 @@ html {
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    top: 3.7rem;
+    top: 3.9rem;
     left: 0.7rem;
     box-shadow:0 0 0  .09rem #f7f9ec;
     z-index: 10;
@@ -286,7 +286,7 @@ html {
     line-height: 0.84rem;
     background: #fff;
     position: absolute;
-    top: 4.5rem;
+    top: 4.7rem;
     left: 0.5rem;
     padding: 0.07rem 0.15rem;
     text-align: right;
@@ -296,7 +296,7 @@ html {
 }
 .slide2 .information{
     position: absolute;
-    top: 5.5rem;
+    top: 5.7rem;
     left: 0.5rem;
     padding-top: .3rem;
     width: 5.4rem;
@@ -330,96 +330,53 @@ html {
 }
 .slide3 .tLine{
     position: absolute;
-    top: 1.2rem;
+    top: 0.7rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
     background: darkblue;
-    z-index: 20;
+    z-index: 9;
     transform: rotate(45deg);
     transform-origin: left;
     opacity: 0;
 }
 .slide3 .bLine{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 0.7rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
     background: darkblue;
-    z-index: 20;
-    /*transform: rotate(-45deg);*/
+    z-index: 9;
+    transform: rotate(-45deg);
     transform-origin: left;
-    /*opacity: 0;*/
+    opacity: 0;
 }
-#page3 .tLine{
-    -webkit-animation: zoomIn 1s linear 0s both;
-    animation: zoomIn 1s linear 0s both;
-}
-#page3 .bLine{
-    -webkit-animation: lineMove 1s linear 0s both;
-    animation: lineMove 1s linear 0s both;
-}
-@-webkit-keyframes lineMove1 {
-    from ,30%{
-        opacity: 0;
-        -webkit-transform: translate(0, 10px) rotate(45deg);
-        transform: translate(0, 10px) rotate(45deg);
-    }
-
-    60% {
-        opacity: 1;
-        -webkit-transform: translate(0, 0) rotate(45deg);
-        transform: translate(0, 0) rotate(45deg);
-    }
-    100%{
-        opacity: 1;
-        -webkit-transform: translate(0, -15px) rotate(45deg);
-        transform: translate(0, -15px) rotate(45deg);
-    }
-}
-@keyframes lineMove1 {
-    from ,30%{
-        opacity: 0;
-        -webkit-transform: translate(0, 10px) rotate(45deg);
-        transform: translate(0, 10px) rotate(45deg);
-    }
-
-    60% {
-        opacity: 1;
-        -webkit-transform: translate(0, 0) rotate(45deg);
-        transform: translate(0, 0) rotate(45deg);
-    }
-    100%{
-        opacity: 1;
-        -webkit-transform: translate(0, -15px) rotate(45deg);
-        transform: translate(0, -15px) rotate(45deg);
-    }
-}
-
 .slide3 .triangle{
     position: absolute;
-    top: -1.2rem;
+    top: 4.7rem;
     left: -2.4rem;
+    width: 6.8rem;
+    height: 6.8rem;
+    background: #12034f;
     z-index: 9;
+    transform: rotate(-45deg);
+    transform-origin: left;
     opacity: 0;
-
-    font-size: 0;
-    border: 6.9rem solid transparent;
-    border-left-color: #12034f;
 }
 .slide3 .triangle1{
     position: absolute;
-    top: -.2rem;
+    top: 4.8rem;
     left: -2.1rem;
+    width: 5.9rem;
+    height: 5.9rem;
     z-index: 9;
-    font-size: 0;
-    border: 5.9rem solid transparent;
-    border-left-color: #4c456c;
+    border: 0.05rem solid #fff;
+    background: #12034f;
+    transform: rotate(-45deg);
+    transform-origin: left;
     opacity: 0;
 }
-
-
 .slide3 .job{
     display: block;
     position: absolute;
@@ -530,7 +487,10 @@ html {
     transform: rotate(-45deg);
 }
 
-
+#page3 .tLine,#page3 .bLine{
+    -webkit-animation: zoomIn 1s linear 0s both;
+    animation: zoomIn 1s linear 0s both;
+}
 #page3 .triangle{
     -webkit-animation: zoomIn 1s linear 0s both;
     animation: zoomIn 1s linear 0s both;
@@ -606,7 +566,7 @@ html {
     left: .6rem;
     width: 1.3rem;
     height: 1.1rem;
-    font-size: .4rem;
+    font-size: .5rem;
     color: rgb(35, 163, 211);
 
 }
@@ -618,7 +578,7 @@ html {
 .slide4 p{
     display: inline-block;
     width: 5.92rem;
-    height: 1.5rem;
+    height: 1.56rem;
     border-radius: 40px;
     margin-top: 0.09rem;
     background: rgba(0,0,0,.2);
@@ -648,17 +608,17 @@ html {
 }
 .slide4 div .step3{
     position: absolute;
-    top: 3.7rem;
+    top: 3.9rem;
     left: 0;
 }
 .slide4 div .step4{
     position: absolute;
-    top: 5.4rem;
+    top: 5.6rem;
     left: 0;
 }
 .slide4 div .step5{
     position: absolute;
-    top: 7rem;
+    top: 7.4rem;
     left: 0;
 }
 
@@ -746,7 +706,6 @@ html {
     top: 7.2rem;
 }
 .slide5 .qq{
-    color: #ffb615;
     top: 8rem;
 }
 
@@ -801,7 +760,6 @@ html {
     }
 
     to {
-        opacity: 1;
         -webkit-transform: none;
         transform: none;
     }
@@ -1124,40 +1082,5 @@ html {
     }
 }
 
-@-webkit-keyframes lineMove {
-    from ,30%{
-        opacity: 0;
-        -webkit-transform: translate(0, 10px) rotate(-45deg);
-        transform: translate(0, 10px) rotate(-45deg);
-    }
 
-    60% {
-        opacity: 1;
-        -webkit-transform: translate(0, 0) rotate(-45deg);
-        transform: translate(0, 0) rotate(-45deg);
-    }
-    100%{
-        opacity: 1;
-        -webkit-transform: translate(0, -20px) rotate(-45deg);
-        transform: translate(0, -20px) rotate(-45deg);
-    }
-}
-@keyframes lineMove {
-    from ,30%{
-        opacity: 0;
-        -webkit-transform: translate(0, 10px) rotate(-45deg);
-        transform: translate(0, 10px) rotate(-45deg);
-    }
-
-    60% {
-        opacity: 1;
-        -webkit-transform: translate(0, 0) rotate(-45deg);
-        transform: translate(0, 0) rotate(-45deg);
-    }
-    100%{
-        opacity: 1;
-        -webkit-transform: translate(0, -20px) rotate(-45deg);
-        transform: translate(0, -20px) rotate(-45deg);
-    }
-}
 /*在某些设备上，由于屏幕的宽高比例和设计稿的比例严重失调，会出现我们响应式计算的结果不符合最佳预览方案，此时我们针对于特殊的设备用@MEDIA进行微调整即可*/
