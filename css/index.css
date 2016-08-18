@@ -181,7 +181,7 @@ html {
     color: #fff;
     position: absolute;
     top: 3.5rem;
-    left: .7rem;
+    left: .8rem;
     opacity: 0;
 }
 .slide1 .promise{
@@ -335,10 +335,10 @@ html {
     width: 8rem;
     height: 0.02rem;
     background: darkblue;
-    z-index: 9;
-    transform: rotate(45deg);
+    z-index: 20;
+    /*transform: rotate(45deg);*/
     transform-origin: left;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 .slide3 .bLine{
     position: absolute;
@@ -347,21 +347,61 @@ html {
     width: 8rem;
     height: 0.02rem;
     background: darkblue;
-    z-index: 9;
-    transform: rotate(-45deg);
+    z-index: 20;
+    /*transform: rotate(-45deg);*/
     transform-origin: left;
-    opacity: 0;
+    /*opacity: 0;*/
 }
+#page3 .tLine{
+    webkit-animation: lineMove1 1s linear 0s both;
+    animation: lineMove1 1s linear 0s both;
+}
+#page3 .bLine{
+    -webkit-animation: lineMove 1s linear 0s both;
+    animation: lineMove 1s linear 0s both;
+}
+@-webkit-keyframes lineMove1 {
+    from ,30%{
+        opacity: 0;
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        transform: translate(0, 10px) rotate(45deg);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0) rotate(45deg);
+        transform: translate(0, 0) rotate(45deg);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        transform: translate(0, -10px) rotate(45deg);
+    }
+}
+@keyframes lineMove1 {
+    from ,30%{
+        opacity: 0;
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        transform: translate(0, 10px) rotate(45deg);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0) rotate(45deg);
+        transform: translate(0, 0) rotate(45deg);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        transform: translate(0, -10px) rotate(45deg);
+    }
+}
+
 .slide3 .triangle{
     position: absolute;
     top: -1.2rem;
     left: -2.4rem;
-    /*width: 6.8rem;*/
-    /*height: 6.8rem;*/
-    /*background: #12034f;*/
     z-index: 9;
-    /*transform: rotate(-45deg);*/
-    /*transform-origin: left;*/
     opacity: 0;
 
     font-size: 0;
@@ -372,63 +412,14 @@ html {
     position: absolute;
     top: -.2rem;
     left: -2.1rem;
-    /*width: 5.9rem;*/
-    /*height: 5.9rem;*/
     z-index: 9;
-    /*border: 0.05rem solid #fff;*/
     font-size: 0;
     border: 5.9rem solid transparent;
     border-left-color: #4c456c;
-    /*transform: rotate(-45deg);*/
-    /*transform-origin: left;*/
     opacity: 0;
 }
-.slide3 .triangle2{
-    position: absolute;
-    top: -.2rem;
-    left: -2.1rem;
-    width: 5.9rem;
-    height: 5.9rem;
-    z-index: 10;
-    /*border: 0.05rem solid #fff;*/
-    font-size: 0;
-    border: 5rem solid transparent;
-    border-left-color: #12034f;
-    /*transform: rotate(-45deg);*/
-    /*transform-origin: left;*/
-    opacity: 0;
-}
-@-webkit-keyframes zoomIn1 {
-    from {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3) rotate(180deg);
-        transform: scale3d(.3, .3, .3) rotate(180deg);
-    }
 
-    50% {
-        opacity: 1;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn1 {
-    from {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3) rotate(180deg);
-        transform: scale3d(.3, .3, .3) rotate(180deg);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 .slide3 .job{
     display: block;
     position: absolute;
@@ -539,10 +530,7 @@ html {
     transform: rotate(-45deg);
 }
 
-#page3 .tLine,#page3 .bLine{
-    -webkit-animation: zoomIn 1s linear 0s both;
-    animation: zoomIn 1s linear 0s both;
-}
+
 #page3 .triangle{
     -webkit-animation: zoomIn 1s linear 0s both;
     animation: zoomIn 1s linear 0s both;
@@ -1136,5 +1124,40 @@ html {
     }
 }
 
+@-webkit-keyframes lineMove {
+    from ,30%{
+        opacity: 0;
+        -webkit-transform: translate(0, 10px) rotate(-45deg);
+        transform: translate(0, 10px) rotate(-45deg);
+    }
 
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0) rotate(-45deg);
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0, -10px) rotate(-45deg);
+        transform: translate(0, -10px) rotate(-45deg);
+    }
+}
+@keyframes lineMove {
+    from ,30%{
+        opacity: 0;
+        -webkit-transform: translate(0, 10px) rotate(-45deg);
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0) rotate(-45deg);
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(0, -10px) rotate(-45deg);
+        transform: translate(0, -10px) rotate(-45deg);
+    }
+}
 /*在某些设备上，由于屏幕的宽高比例和设计稿的比例严重失调，会出现我们响应式计算的结果不符合最佳预览方案，此时我们针对于特殊的设备用@MEDIA进行微调整即可*/
