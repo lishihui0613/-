@@ -181,18 +181,18 @@ html {
     color: #fff;
     position: absolute;
     top: 3.5rem;
-    left: .4rem;
+    left: .7rem;
     opacity: 0;
 }
 .slide1 .promise{
-    top: 7.4rem;
+    top: 7rem;
 }
 .slide1 .confi{
-    top: 8.4rem;
+    top: 8rem;
 }
 .slide1 .promise,.slide1 .confi{
     width: 2.3rem;
-    font-size: .4rem;
+    font-size: .3rem;
     line-height: .4rem;
     display: block;
     color: rgb(255,255,255);
@@ -204,15 +204,15 @@ html {
 }
 .slide1 .line2{
     position: absolute;
-    left: 2.2rem;
+    left: 2.3rem;
     font-style: normal;
     display: block;
-    width: 2.3rem;
+    width: 2rem;
     height: 1rem;
     border: 1px solid #eee;
     border-left: transparent;
     border-right: transparent;
-    top: 8.2rem;
+    top: 7.7rem;
     z-index: 11;
     opacity: 0;
 }
@@ -221,7 +221,7 @@ html {
     color: #928d88;
     position: absolute;
     left: 2.1rem;
-    top: 9.4rem;
+    top: 9rem;
     opacity: 0;
 }
 
@@ -275,7 +275,7 @@ html {
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    top: 3.9rem;
+    top: 3.7rem;
     left: 0.7rem;
     box-shadow:0 0 0  .09rem #f7f9ec;
     z-index: 10;
@@ -286,7 +286,7 @@ html {
     line-height: 0.84rem;
     background: #fff;
     position: absolute;
-    top: 4.7rem;
+    top: 4.5rem;
     left: 0.5rem;
     padding: 0.07rem 0.15rem;
     text-align: right;
@@ -296,7 +296,7 @@ html {
 }
 .slide2 .information{
     position: absolute;
-    top: 5.7rem;
+    top: 5.5rem;
     left: 0.5rem;
     padding-top: .3rem;
     width: 5.4rem;
@@ -354,28 +354,80 @@ html {
 }
 .slide3 .triangle{
     position: absolute;
-    top: 4.7rem;
+    top: -1.2rem;
     left: -2.4rem;
-    width: 6.8rem;
-    height: 6.8rem;
-    background: #12034f;
+    /*width: 6.8rem;*/
+    /*height: 6.8rem;*/
+    /*background: #12034f;*/
     z-index: 9;
-    transform: rotate(-45deg);
-    transform-origin: left;
+    /*transform: rotate(-45deg);*/
+    /*transform-origin: left;*/
     opacity: 0;
+
+    font-size: 0;
+    border: 6.9rem solid transparent;
+    border-left-color: #12034f;
 }
 .slide3 .triangle1{
     position: absolute;
-    top: 4.8rem;
+    top: -.2rem;
+    left: -2.1rem;
+    /*width: 5.9rem;*/
+    /*height: 5.9rem;*/
+    z-index: 9;
+    /*border: 0.05rem solid #fff;*/
+    font-size: 0;
+    border: 5.9rem solid transparent;
+    border-left-color: #4c456c;
+    /*transform: rotate(-45deg);*/
+    /*transform-origin: left;*/
+    opacity: 0;
+}
+.slide3 .triangle2{
+    position: absolute;
+    top: -.2rem;
     left: -2.1rem;
     width: 5.9rem;
     height: 5.9rem;
-    z-index: 9;
-    border: 0.05rem solid #fff;
-    background: #12034f;
-    transform: rotate(-45deg);
-    transform-origin: left;
+    z-index: 10;
+    /*border: 0.05rem solid #fff;*/
+    font-size: 0;
+    border: 5rem solid transparent;
+    border-left-color: #12034f;
+    /*transform: rotate(-45deg);*/
+    /*transform-origin: left;*/
     opacity: 0;
+}
+@-webkit-keyframes zoomIn1 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3) rotate(180deg);
+        transform: scale3d(.3, .3, .3) rotate(180deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn1 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3) rotate(180deg);
+        transform: scale3d(.3, .3, .3) rotate(180deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 .slide3 .job{
     display: block;
@@ -566,7 +618,7 @@ html {
     left: .6rem;
     width: 1.3rem;
     height: 1.1rem;
-    font-size: .5rem;
+    font-size: .4rem;
     color: rgb(35, 163, 211);
 
 }
@@ -578,7 +630,7 @@ html {
 .slide4 p{
     display: inline-block;
     width: 5.92rem;
-    height: 1.56rem;
+    height: 1.5rem;
     border-radius: 40px;
     margin-top: 0.09rem;
     background: rgba(0,0,0,.2);
@@ -618,7 +670,7 @@ html {
 }
 .slide4 div .step5{
     position: absolute;
-    top: 7.4rem;
+    top: 7.3rem;
     left: 0;
 }
 
@@ -706,6 +758,7 @@ html {
     top: 7.2rem;
 }
 .slide5 .qq{
+    color: #ffb615;
     top: 8rem;
 }
 
@@ -760,6 +813,7 @@ html {
     }
 
     to {
+        opacity: 1;
         -webkit-transform: none;
         transform: none;
     }
