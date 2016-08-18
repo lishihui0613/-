@@ -330,13 +330,13 @@ html {
 }
 .slide3 .tLine{
     position: absolute;
-    top: 3rem;
+    top: 1.2rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
     background: darkblue;
     z-index: 20;
-    /*transform: rotate(45deg);*/
+    transform: rotate(45deg);
     transform-origin: left;
     /*opacity: 0;*/
 }
@@ -353,8 +353,8 @@ html {
     /*opacity: 0;*/
 }
 #page3 .tLine{
-    webkit-animation: lineMove1 1s linear 0s both;
-    animation: lineMove1 1s linear 0s both;
+    webkit-animation: bounceInLeft 1s linear 0s both;
+    animation: bounceInLeft 1s linear 0s both;
 }
 #page3 .bLine{
     -webkit-animation: lineMove 1s linear 0s both;
