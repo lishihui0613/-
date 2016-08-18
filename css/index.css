@@ -330,7 +330,7 @@ html {
 }
 .slide3 .tLine{
     position: absolute;
-    top: 1.2rem;
+    top: 1rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
@@ -342,7 +342,7 @@ html {
 }
 .slide3 .bLine{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: -.5rem;
     left: 0;
     width: 8rem;
     height: 0.02rem;
